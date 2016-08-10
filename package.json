@@ -17,6 +17,7 @@
   "devDependencies": {
     "config": "^1.21.0",
     "mocha": "^2.5.3",
-    "node-mocks-http": "^1.5.2"
+    "node-mocks-http": "^1.5.2",
+    "nodemailer": "^2.5.0"
   }
 }
