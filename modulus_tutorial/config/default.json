@@ -1,0 +1,18 @@
+{
+  "Customer": {
+    "dbConfig": {
+      "host": "test_localhost",
+      "port": 5984,
+      "dbName": "test_customers"
+    },
+    "credit": {
+      "initialLimit": 100,
+      "initialDays": 1
+    }
+  },
+
+  "google_recaptcha": {
+    "verification_url" : "https://www.google.com/recaptcha/api/siteverify",
+    "secretKey" : "x1y2z3"
+  }
+}

@@ -1,0 +1,4 @@
+Modulus Tutorial Link
+
+Absolute Beginner's Guide to NodeJS
+http://blog.modulus.io/absolute-beginners-guide-to-nodejs

@@ -1,0 +1,22 @@
+{
+  "name": "hello_node",
+  "version": "1.0.0",
+  "description": "First Node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Sana I.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "config": "^1.21.0",
+    "mocha": "^2.5.3",
+    "node-mocks-http": "^1.5.2"
+  }
+}
