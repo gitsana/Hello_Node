@@ -10,6 +10,7 @@
 <div class="container">
     <h2>Test</h2>
     <button type="button" class="btn btn-default" id="showModalButton">Show Modal</button>
+    <button type="button" class="btn btn-default" id="showProgressButton">Show Progress</button>
 
     <!-- Modal -->
     <!-- Code taken from: http://codepen.io/SitePoint/pen/KkHyw -->
@@ -34,14 +35,20 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/resources/bootstrap/js/bootstrap.js"></script>
+<script src="/resources/bootstrap_progressbar/progressBar.min.js"></script>
 
 <script>
     $("#showModalButton").click(function() {
-//        alert("show modal here");
         var options = {"backdrop":"static"};
+        $("#myModalLabel").html("Resetting Modal Label");
         $("#basicModal").modal(options);
 
     });
+    
+    $("#showProgressButton").click(function () {
+        waitingDialog.show("Please wait, download in progress");
+        waitingDialog.hide();
+    })
 </script>
 </body>
 </html>

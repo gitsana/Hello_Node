@@ -1,6 +1,6 @@
 var url = require('url')
 var config = require('config')
-
+const querystring = require('querystring')
 
 
 // TODO check if formatting is correct
@@ -12,18 +12,19 @@ verificationUrlObj.search += "&response=rrr123"
 
 var verificationUrlString = url.format(verificationUrlObj)
 
-console.log(verificationUrlString)
-console.log(verificationUrlObj)
+// console.log(verificationUrlString)
+// console.log(verificationUrlObj)
 
-//console.log(recaptcha_info)
+var str = "foo=bar&abc=xyz&abc=123"
+var parsedStr = querystring.parse(str)
+console.log(parsedStr)
+console.log(typeof parsedStr)
 
-// var urlObject = url.parse(verificationUrl);
-// urlObject.search = "?search=sch";
-// console.log(urlObject);
-//
-// var urlString = url.format(urlObject);
-// console.log(urlString);
-//
-// urlObject.search = "search=sch788";
-//
-// console.log(urlString);
+var urlSearch = {}
+urlSearch.secretCode = "xyz";
+urlSearch.response = "response1040";
+
+console.log(urlSearch)
+console.log(querystring.stringify(urlSearch))
+console.log("-----")
+console.log("")
